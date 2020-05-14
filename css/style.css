@@ -1,0 +1,232 @@
+
+/* Основные стили для 2х страниц */
+:root{
+    --primary-background-color:#FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --primary-text-color:#757575;
+    --primary-hover-color:#2196F3;
+    --secondary-text-color:#212121;
+}
+
+body{
+    background-color: var(--primary-background-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+h3{
+    color: var(--primary-background-color);
+    text-transform: uppercase ;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/*Стили для header*/
+
+    /*Logo*/
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: black; /*На макете текст Studio  реально темнее чем текст на всей странице*/
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo span{
+    color: var(--primary-hover-color);
+}
+
+    /*Site menu and contacts*/ 
+
+.menu-link,
+.contact-item{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.current,
+.contact-item:hover,
+.contact-item:focus{
+    color: var(--primary-hover-color);
+}
+
+.contact-item{
+    color: var(--primary-text-color);
+}
+
+/*Стили для кнопок ссылок. Когда будем делать НАСТОЯЩУЮ кнопку в футере- потом уберу*/
+.link-button {
+    color: var(--primary-background-color);
+    background-color: var(--primary-hover-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/*Стили для страницы Studio*/
+
+/*Стили для Героя*/
+
+.hero{
+background: rgba(47, 48, 58, 0.8);
+}
+.hero h1{
+    color:var(--primary-background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/*Стили для Преимуществ студии*/
+
+.benefits h3{
+    color: var(--secondary-text-color);
+}
+
+.benefits p{
+    color: var(--primary-text-color);
+    line-height: 1.71;
+}
+
+/*Стили Направления разработки*/
+
+.services-list h3{
+    background: rgba(47, 48, 58, 0.8);
+}
+
+/*Стили для Наша команда*/
+
+.team-list h3{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: none;
+}
+.team-list p{
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+/*Стили для footer*/
+
+footer{
+    background-color: #2F303A; /*ТАК УДОБНЕЙ ВИДЕТЬ применились ли цвета текста*/
+}
+
+footer em{
+    font-style: normal;
+   
+}
+
+    /*Footer contacts*/
+
+footer .logo{
+    color: var(--primary-background-color);
+    font-size: 22px;
+    line-height: 1.18;
+}
+
+.adress-location,
+.adress-contacts{
+    color: var(--secondary-background-color);
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.adress-contacts{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+    /*Footer social media*/
+
+    /*Footer signup*/
+
+   .signup {
+    font-weight: 900;
+} 
+
+   /*Footer copyright*/
+
+   .copyright > .text{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+
+/*Стили для страницы Portfolio*/
+
+    /*Кнопки-фильтры*/
+button {
+    background: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: inherit;
+    
+}
+button:hover,
+button:focus{
+    background:var(--primary-hover-color);
+    color: var(--primary-background-color);
+
+}
+
+    /*Примеры работ*/
+
+.work-link{
+    text-decoration: none;
+}
+.work-examples h2{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.work-examples p{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+.work-examples .hover-text{
+    color: var(--primary-background-color);
+    font-size: 18px;
+    line-height: 1.56;
+
+        /*пока Саша сказал не делать background, но чтобы было видно цвет текста - применила*/
+    background: var(--primary-hover-color); 
+}
