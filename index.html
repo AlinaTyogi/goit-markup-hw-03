@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Web Studio v.1</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
 
   <!-- Шапка страницы -->
 
-    <header>
-      <nav>
-        <a class=logo href="./index.html">
-            <span>Web</span> Studio
-        </a>
-        <ul class="menu-list">
-          <li><a class="menu-link current" href="./index.html">Студия</a></li>
-          <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="menu-link" href="#" target="_blank">Контакты</a></li>
-        </ul>
-      </nav>  
-        <ul class="menu-contacts">
-          <li>
-            <img src="./images/Header/envelope_hover_.svg" alt="Конвертик">
-            <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <img src="./images/Header/Tel_img.svg" alt="Мобильный телефон">
-            <a class="contact-item" href="tel:380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+    <header class="page-header">
+      <div class="container">
+        <nav>
+          <a class=logo href="./index.html">
+              <span>Web</span> Studio
+          </a>
+          <ul class="menu-list">
+            <li><a class="menu-link current" href="./index.html">Студия</a></li>
+            <li><a class="menu-link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="menu-link" href="#" target="_blank">Контакты</a></li>
+          </ul>
+        </nav>  
+          <ul class="menu-contacts">
+            <li>
+              <img src="./images/Header/envelope_hover_.svg" alt="Конвертик">
+              <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <img src="./images/Header/Tel_img.svg" alt="Мобильный телефон">
+              <a class="contact-item" href="tel:380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+      </div>
     </header> 
     
   <!--Основной контент страницы-->
@@ -46,7 +55,8 @@
 
       <!--Преимущества студии-->
       <section class="benefits">
-        <h2>Наши преимущества</h2>
+        <div class="container">
+          <h2 class="is-hidden">Наши преимущества</h2>
         <ul class="benefits-list">
           <li>
             <img src="./images/Addvantages/Antena.svg" alt="Спутниковая антена">
@@ -77,15 +87,17 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Направления разработки-->
       <section class="services">
-        <h2>Чем мы занимаемся</h2>
+        <div class="container">
+          <h2>Чем мы занимаемся</h2>
         <ul class="services-list">
           <li>
             <!--Можно сделать ссылками, вдруг будет ссылка на проекты (примеры работ)-->
-              <img 
+              <img class="service-photo"
                 src="./images/Operation/desktop_apps.jpg" 
                 alt="Картинка Рабочего стола компьютера" 
                 width="380" 
@@ -112,14 +124,17 @@
               <h3>Дизайнерские решения</h3>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Наша команда-->
       <section class="team">
+       <div class="container">
         <h2>Наша команда</h2>
         <ul class="team-list">
           <li>
             <img 
+              class="team-photo"
               src="./images/Photo_Contacts/john_smith.jpg" 
               alt="Фото Джон Смит"
               width="278" 
@@ -136,6 +151,7 @@
           </li>
           <li>
             <img 
+              class="team-photo"
               src="./images/Photo_Contacts/marta_stewart.jpg" 
               alt="Фото Марта Стюарт"
               width="278" 
@@ -152,6 +168,7 @@
           </li>
           <li>
             <img 
+              class="team-photo"  
               src="./images/Photo_Contacts/robert_jakis.jpg" 
               alt="Фото Роберт Якис"
               width="278" 
@@ -168,6 +185,7 @@
           </li>
           <li>
             <img 
+              class="team-photo"
               src="./images/Photo_Contacts/martin_doe.jpg" 
               alt="Фото Мартин Дое"
               width="278" 
@@ -183,11 +201,13 @@
             </ul>
           </li>
         </ul>
+       </div>
       </section>
 
       <!--Постоянные клиенты-->
-      <section>
-        <h2>Постоянные клиенты</h2>
+      <section class="customers">
+        <div class="container">
+          <h2>Постоянные клиенты</h2>
         <ul>
           <li>
             <a 
@@ -232,6 +252,7 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
 
     </main>
@@ -240,36 +261,38 @@
     
     <footer>
       <!--Контакты-->
-      <div class="footer-contacts">
-        <h2>Контакты студии</h2>
-          <a class="logo" href="./index.html">
-            <span>Web</span> Studio
-          </a>
-          <address class="adress-location">г. Киев, пр-т Леси Украинки, 26</address>
-          <address>
-            <a class="adress-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
-            <a class="adress-contacts" href="tel:380961111111">+38 096 111 11 11</a>
-          </address>
+      <div class="container">
+        <div class="footer-contacts ">
+          <h2 class="is-hidden">Контакты студии</h2>
+            <a class="logo" href="./index.html">
+              <span>Web</span> Studio
+            </a>
+            <address class="adress-location">г. Киев, пр-т Леси Украинки, 26</address>
+            <address class="adress-contacts">
+              <a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
+              <a class="item" href="tel:380961111111">+38 096 111 11 11</a>
+            </address>
+          </div>
+        <!--Социальные сети-->
+        <div class="socials">
+          <h2 class="is-hidden">Ссылки на социальные сети студии</h2>
+            <h3 class="title"><em>присоединяйтесь</em></h3>
+            <ul>
+              <li><a href="№" aria-label="Ссылка на Instagram" target="_blank">Instagram</a></li>
+              <li><a href="№" aria-label="Ссылка на Twitter" target="_blank">Twitter</a></li>
+              <li><a href="№" aria-label="Ссылка на Facebook" target="_blank">Facebook</a></li>
+              <li><a href="№" aria-label="Ссылка на LinkedIn" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        <!--Форма подписки-->
+        <div class=subscribe>
+          <h2 class="is-hidden">Форма подписки</h2>
+            <h3 class="title"><em>Подпишитесь на рассылку</em></h3>
+            <a class="link-button" href="#">Подписаться</a>
         </div>
-      <!--Социальные сети-->
-      <div>
-        <h2>Ссылки на социальные сети студии</h2>
-          <h3><em>присоединяйтесь</em></h3>
-          <ul>
-            <li><a href="№" aria-label="Ссылка на Instagram" target="_blank">Instagram</a></li>
-            <li><a href="№" aria-label="Ссылка на Twitter" target="_blank">Twitter</a></li>
-            <li><a href="№" aria-label="Ссылка на Facebook" target="_blank">Facebook</a></li>
-            <li><a href="№" aria-label="Ссылка на LinkedIn" target="_blank">LinkedIn</a></li>
-          </ul>
+        <div class="copyright">
+            <p class="text">2020 | Developed by GoIT Students </p>
         </div>
-      <!--Форма подписки-->
-      <div>
-        <h2>Форма подписки</h2>
-          <h3><em>Подпишитесь на рассылку</em></h3>
-          <a class="link-button" href="#">Подписаться</a>
-      </div>
-      <div class="copyright">
-          <p class="text">2020 | Developed by GoIT Students </p>
       </div>
     </footer>
 </body>

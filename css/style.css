@@ -20,26 +20,52 @@ body{
 }
 
 ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
+    
 }
 
 h2{
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
     color: var(--secondary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
 }
 h3{
+    margin: 0;
+    padding: 0;
+
     color: var(--primary-background-color);
     text-transform: uppercase ;
     font-weight: 700;
     font-size: 14px;
 }
+.is-hidden{
+    display: none;
+}
 
 /*Стили для header*/
 
-    /*Logo*/
+    
+.container{
+    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
 
+}
+
+
+    /*Logo*/
 .logo{
     font-family: 'Raleway', sans-serif;
     color: black; /*На макете текст Studio  реально темнее чем текст на всей странице*/
@@ -77,8 +103,16 @@ h3{
 
 /*Стили для кнопок ссылок. Когда будем делать НАСТОЯЩУЮ кнопку в футере- потом уберу*/
 .link-button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+
     color: var(--primary-background-color);
     background-color: var(--primary-hover-color);
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -92,9 +126,12 @@ h3{
 /*Стили для Героя*/
 
 .hero{
-background: rgba(47, 48, 58, 0.8);
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
 }
 .hero h1{
+    margin-bottom: 46px;
+    
     color:var(--primary-background-color);
     font-weight: 900;
     font-size: 44px;
@@ -107,35 +144,76 @@ background: rgba(47, 48, 58, 0.8);
 /*Стили для Преимуществ студии*/
 
 .benefits h3{
+    
+    margin: 0 0 10px 0;
+    
     color: var(--secondary-text-color);
 }
 
 .benefits p{
+    
+    margin: 0px;
     color: var(--primary-text-color);
     line-height: 1.71;
 }
+.benefits img{
+    display: inline-block;
+    padding: 25px 106.34px;
+    border-radius: 4px; 
+    margin-bottom: 30px;
+}
+
 
 /*Стили Направления разработки*/
+.services-list{
+    margin-top: 50px;
+}
 
 .services-list h3{
     background: rgba(47, 48, 58, 0.8);
+    border-radius: 0px 0px 4px 4px;
+    
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    text-align: center;
 }
+
 
 /*Стили для Наша команда*/
 
 .team-list h3{
+    margin-bottom: 10px;    
+
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-transform: none;
+    text-align: center;
 }
 .team-list p{
+    margin: 0; 
+    margin-bottom: 16px;
+    
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
 }
+.team-photo{
+    margin-bottom: 30px;
+
+    border-radius: 4px 4px 0px 0px;
+} 
+
+.team h2, 
+.customers h2 {
+    padding-top: 94px;
+}
+/*Стили для секции постоянные клиенты*/
+
 
 /*Стили для footer*/
 
@@ -151,33 +229,49 @@ footer em{
     /*Footer contacts*/
 
 footer .logo{
+    display: inline-block;
+    margin: 48px 0px 10px 0px;
+    
     color: var(--primary-background-color);
     font-size: 22px;
     line-height: 1.18;
 }
 
-.adress-location,
-.adress-contacts{
+.adress-location{
     color: var(--secondary-background-color);
     font-style: normal;
     line-height: 1.71;
 }
+.footer-contacts{
+    margin-bottom: 28px;
+}
 
-.adress-contacts{
+
+.adress-contacts > .item{
+    margin-bottom: 10px;
+
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    line-height: 1.71;
     text-decoration: none;
 }
     /*Footer social media*/
+.socials .title,
+.subscribe .title{
+    margin-bottom: 21px;
+}
+.socials{
+    margin-bottom: 56px;
+}
 
     /*Footer signup*/
-
-   .signup {
-    font-weight: 900;
-} 
 
    /*Footer copyright*/
 
    .copyright > .text{
+       margin-top: 18px;
+       margin-bottom: 21px;
+
     color: rgba(255, 255, 255, 0.4);
     font-size: 12px;
     line-height: 2;
