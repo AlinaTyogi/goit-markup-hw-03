@@ -50,23 +50,23 @@ h3{
     display: none;
 }
 
-/*Стили для header*/
-
-    
 .container{
     margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 1px solid tomato;
 
 }
 
+/*Стили для header*/
 
     /*Logo*/
 .logo{
+    margin-right: 80px;
+    
     font-family: 'Raleway', sans-serif;
     color: black; /*На макете текст Studio  реально темнее чем текст на всей странице*/
     font-weight: 700;
@@ -88,6 +88,12 @@ h3{
     font-weight: 500;
     letter-spacing: 0.02em;
 }
+.menu-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
+
 
 .menu-link:hover,
 .menu-link:focus,
@@ -100,6 +106,26 @@ h3{
 .contact-item{
     color: var(--primary-text-color);
 }
+
+.header-flex,
+.nav-main,
+.menu-contacts,
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+.menu-list .item:not(:last-child){
+    margin-right: 50px;
+}
+.menu-contacts .item:not(:last-child){
+    margin-right: 10px;
+}
+.menu-contacts{
+    margin-left: auto;
+}
+
+
+
 
 /*Стили для кнопок ссылок. Когда будем делать НАСТОЯЩУЮ кнопку в футере- потом уберу*/
 .link-button {
@@ -225,6 +251,15 @@ footer em{
     font-style: normal;
    
 }
+.footer-flex{
+   display: flex;
+   margin-bottom: 0px;
+   align-items: center;
+}
+.footer-flex:last-child{
+    justify-content: flex-end;
+}
+
 
     /*Footer contacts*/
 
@@ -244,6 +279,7 @@ footer .logo{
 }
 .footer-contacts{
     margin-bottom: 28px;
+    margin-right: 179px;
 }
 
 
@@ -260,17 +296,19 @@ footer .logo{
 .subscribe .title{
     margin-bottom: 21px;
 }
-.socials{
+/* .socials{
     margin-bottom: 56px;
-}
+} */
 
     /*Footer signup*/
 
    /*Footer copyright*/
 
+
    .copyright > .text{
-       margin-top: 18px;
-       margin-bottom: 21px;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 21px;
 
     color: rgba(255, 255, 255, 0.4);
     font-size: 12px;
